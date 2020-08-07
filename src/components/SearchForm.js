@@ -14,7 +14,7 @@ export default function Filter(props) {
     <form className='search container mb-4 col-8'>
       <div className='form-inline '>
         <label className='mr-2' htmlFor='filter'>
-          Filter by role
+          Filter Role:
         </label>
         <input
           name='filter'
@@ -23,8 +23,7 @@ export default function Filter(props) {
           onChange={props.handleInputChange}
           value={props.filter}
           className='form-control col-6'
-          placeholder='Enter a role to filter by'
-          id='filter'
+          placeholder='Enter a role to filter'
         />
         <datalist id='roles'></datalist>
         <button

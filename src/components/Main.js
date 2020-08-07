@@ -24,8 +24,7 @@ export default class AppContainer extends React.Component {
     const filteredusers = Data.filter(
       (employee) => employee.role === this.state.filter
     );
-    // if there are users that match the filter, set the state.users to the new users
-    // if no users, noUsers is set to true, which is used for conditional rendering
+   
     if (filteredusers.length !== 0) {
       this.setState({
         users: filteredusers,
