@@ -1,5 +1,8 @@
 import React from 'react';
 import './style.css';
+import { faUserFriends } from '@fortawesome/free-solid-svg-icons';
+import { faSortAlphaDown } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export default function TableHeaders(props) {
   return (
@@ -10,15 +13,27 @@ export default function TableHeaders(props) {
           <button
             className='btn btn-outline-dark btn-sm ml-2'
             onClick={props.handleIdSort}
-          ></button>
+          >
+            <FontAwesomeIcon icon={faUserFriends} />
+          </button>
         </th>
-        <th scope='col'>First Name</th>
+        <th scope='col'>
+          First Name
+          <button
+            className='btn btn-outline-dark btn-sm ml-2'
+            onClick={props.handleFirstNameSort}
+          >
+            <FontAwesomeIcon icon={faSortAlphaDown} />
+          </button>
+        </th>
         <th scope='col'>
           Last Name
           <button
             className='btn btn-outline-dark btn-sm ml-2'
-            onClick={props.handleNameSort}
-          ></button>
+            onClick={props.handleLastNameSort}
+          >
+            <FontAwesomeIcon icon={faSortAlphaDown} />
+          </button>
         </th>
         <th scope='col'>Role</th>
         <th scope='col'>Email</th>

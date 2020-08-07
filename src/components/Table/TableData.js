@@ -1,6 +1,7 @@
 import React from 'react';
 import './style.css'
 
+
 export default function TableData(props) {
   return (
     //   map through all results and create a row in the table for each employee in the results
@@ -12,6 +13,7 @@ export default function TableData(props) {
           <td>{employee.lastName}</td>
           <td>{employee.role}</td>
           <td>{employee.email}</td>
+          
         </tr>
       ))}
     </tbody>

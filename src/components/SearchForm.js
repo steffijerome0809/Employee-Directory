@@ -32,10 +32,10 @@ export default function Filter(props) {
           className='filter-btn m-2'
           onClick={props.handleFormSubmit}
         >
-          Filter
+          Submit
         </button>
         <button className='filter-btn' onClick={props.tabledatadisplay}>
-          Reset
+          Refresh
         </button>
       </div>
     </form>
