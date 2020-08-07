@@ -64,6 +64,15 @@ export default class AppContainer extends React.Component {
     this.setState({ users: sortedusers, noUsers: false });
   };
 
+  handleSortState = (event) => {
+    event.preventDefault();
+
+    let sortedusers = this.state.users.sort((a, b) =>
+      a.state.localeCompare(b.state)
+    );
+    this.setState({ users: sortedusers, noUsers: false });
+  };
+
   handleIdSort = () => {
     const sortedusers = this.state.users.sort((a, b) => {
       return a.id - b.id;
@@ -76,9 +85,10 @@ export default class AppContainer extends React.Component {
     if (this.state.noUsers === false) {
       return (
         <Table
+          handleIdSort={this.handleIdSort}
           handleFirstNameSort={this.handleFirstNameSort}
           handleLastNameSort={this.handleLastNameSort}
-          handleIdSort={this.handleIdSort}
+          handleSortState={this.handleSortState}
           data={this.state.users}
         />
       );

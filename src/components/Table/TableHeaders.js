@@ -2,6 +2,7 @@ import React from 'react';
 import './style.css';
 import { faUserFriends } from '@fortawesome/free-solid-svg-icons';
 import { faSortAlphaDown } from '@fortawesome/free-solid-svg-icons';
+import { faCity } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export default function TableHeaders(props) {
@@ -37,6 +38,15 @@ export default function TableHeaders(props) {
         </th>
         <th scope='col'>Role</th>
         <th scope='col'>Email</th>
+        <th scope='col'>
+          state
+          <button
+            className='btn btn-outline-dark btn-sm ml-2'
+            onClick={props.handleStateSort}
+          >
+            <FontAwesomeIcon icon={faCity} />
+          </button>
+        </th>
       </tr>
     </thead>
   );

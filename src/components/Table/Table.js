@@ -8,9 +8,10 @@ export default function Table(props) {
     <div className='table-div pb-5'>
       <table className='table'>
         <TableHeaders
+          handleIdSort={props.handleIdSort}
           handleFirstNameSort={props.handleFirstNameSort}
           handleLastNameSort={props.handleLastNameSort}
-          handleIdSort={props.handleIdSort}
+          handleStateSort={props.handleStateSort}
         />
         <TableData data={props.data} />
       </table>
