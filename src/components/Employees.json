@@ -1,30 +1,86 @@
 [
   {
     "id": 1,
-    "firstName": "Jay",
+    "firstName": "Jayden",
     "lastName": "Chris",
     "role": "Manager",
     "email": "jay@email.com"
   },
   {
     "id": 2,
-    "firstName": "stef",
-    "lastName": "chris",
+    "firstName": "steffi",
+    "lastName": "jerome",
     "role": "Engineer",
     "email": "stef@gmail.com"
   },
   {
     "id": 3,
     "firstName": "kate",
-    "lastName": "nina",
+    "lastName": "melvin",
     "role": "Engineer",
     "email": "nina@email.com"
   },
   {
     "id": 4,
-    "firstName": "joe",
-    "lastName": "mel",
+    "firstName": "joel",
+    "lastName": "britto",
     "role": "Analyst",
     "email": "joem@email.com"
+  },
+  {
+    "id": 5,
+    "firstName": "Jay",
+    "lastName": "Chris",
+    "role": "Manager",
+    "email": "jay@email.com"
+  },
+  {
+    "id": 6,
+    "firstName": "Bob",
+    "lastName": "Smith",
+    "role": "Analyst",
+    "email": "bobsm@gmail.com"
+  },
+  {
+    "id": 7,
+    "firstName": "Ray",
+    "lastName": "Johnson",
+    "role": "HR Representative",
+    "email": "rayjohn@email.com"
+  },
+  {
+    "id": 8,
+    "firstName": "Harry",
+    "lastName": "Potter",
+    "role": "HR Representative",
+    "email": "harrypot@email.com"
+  },
+  {
+    "id": 9,
+    "firstName": "James",
+    "lastName": "Pollan",
+    "role": "Analyst",
+    "email": "jamesp@email.com"
+  },
+  {
+    "id": 10,
+    "firstName": "Jim",
+    "lastName": "Carters",
+    "role": "Analyst",
+    "email": "jimcarry@gmail.com"
+  },
+  {
+    "id": 11,
+    "firstName": "Will",
+    "lastName": "Smith",
+    "role": "Analyst",
+    "email": "willsm@email.com"
+  },
+  {
+    "id": 12,
+    "firstName": "Susie",
+    "lastName": "Thomson",
+    "role": "Engineer",
+    "email": "susietom@email.com"
   }
 ]
