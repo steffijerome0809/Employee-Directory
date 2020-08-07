@@ -42,7 +42,7 @@ export default function TableHeaders(props) {
           state
           <button
             className='btn btn-outline-dark btn-sm ml-2'
-            onClick={props.handleStateSort}
+            onClick={props.handleSortState}
           >
             <FontAwesomeIcon icon={faCity} />
           </button>

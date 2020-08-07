@@ -11,7 +11,7 @@ export default function Table(props) {
           handleIdSort={props.handleIdSort}
           handleFirstNameSort={props.handleFirstNameSort}
           handleLastNameSort={props.handleLastNameSort}
-          handleStateSort={props.handleStateSort}
+          handleSortState={props.handleSortState}
         />
         <TableData data={props.data} />
       </table>
