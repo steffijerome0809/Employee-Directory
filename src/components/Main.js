@@ -79,7 +79,7 @@ export default class AppContainer extends React.Component {
     this.setState({ users: sortedusers, noUsers: false });
   };
 
-  //   Conditional rendering if there are no users that match the filtered search
+
   renderTable = () => {
     if (this.state.noUsers === false) {
       return (
