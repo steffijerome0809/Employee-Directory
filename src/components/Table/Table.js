@@ -9,7 +9,7 @@ export default function Table(props) {
       <table className='table'>
         <TableHeaders
           handleIdSort={props.handleIdSort}
-          handleFirstNameSort={props.handleFirstNameSort}
+          handleRoleSort={props.handleRoleSort}
           handleLastNameSort={props.handleLastNameSort}
           handleSortState={props.handleSortState}
         />

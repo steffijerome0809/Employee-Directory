@@ -18,15 +18,7 @@ export default function TableHeaders(props) {
             <FontAwesomeIcon icon={faUserFriends} />
           </button>
         </th>
-        <th scope='col'>
-          First Name
-          <button
-            className='btn btn-outline-dark btn-sm ml-2'
-            onClick={props.handleFirstNameSort}
-          >
-            <FontAwesomeIcon icon={faSortAlphaDown} />
-          </button>
-        </th>
+        <th scope='col'>First Name</th>
         <th scope='col'>
           Last Name
           <button
@@ -36,7 +28,15 @@ export default function TableHeaders(props) {
             <FontAwesomeIcon icon={faSortAlphaDown} />
           </button>
         </th>
-        <th scope='col'>Role</th>
+        <th scope='col'>
+          Role
+          <button
+            className='btn btn-outline-dark btn-sm ml-2'
+            onClick={props.handleRoleSort}
+          >
+            <FontAwesomeIcon icon={faSortAlphaDown} />
+          </button>
+        </th>
         <th scope='col'>Email</th>
         <th scope='col'>
           state

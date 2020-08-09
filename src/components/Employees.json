@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "firstName": "Jayden",
+    "firstName": "jayden",
     "lastName": "Chris",
     "role": "Manager",
     "email": "jay@email.com",
@@ -33,7 +33,7 @@
   },
   {
     "id": 5,
-    "firstName": "Jay",
+    "firstName": "jay",
     "lastName": "Chris",
     "role": "Manager",
     "email": "jay@email.com",
@@ -41,56 +41,56 @@
   },
   {
     "id": 6,
-    "firstName": "Bob",
-    "lastName": "Smith",
+    "firstName": "bob",
+    "lastName": "smith",
     "role": "Analyst",
     "email": "bobsm@gmail.com",
     "state": "TX"
   },
   {
     "id": 7,
-    "firstName": "Ray",
-    "lastName": "Johnson",
-    "role": "HR Representative",
+    "firstName": "ray",
+    "lastName": "johnson",
+    "role": "HR",
     "email": "rayjohn@email.com",
     "state": "NH"
   },
   {
     "id": 8,
-    "firstName": "Harry",
-    "lastName": "Potter",
-    "role": "HR Representative",
+    "firstName": "harry",
+    "lastName": "potter",
+    "role": "HR",
     "email": "harrypot@email.com",
     "state": "NH"
   },
   {
     "id": 9,
-    "firstName": "James",
-    "lastName": "Pollan",
+    "firstName": "james",
+    "lastName": "pollan",
     "role": "Analyst",
     "email": "jamesp@email.com",
     "state": "NH"
   },
   {
     "id": 10,
-    "firstName": "Jim",
-    "lastName": "Carters",
+    "firstName": "jim",
+    "lastName": "carters",
     "role": "Analyst",
     "email": "jimcarry@gmail.com",
     "state": "NH"
   },
   {
     "id": 11,
-    "firstName": "Will",
-    "lastName": "Smith",
+    "firstName": "will",
+    "lastName": "smith",
     "role": "Analyst",
     "email": "willsm@email.com",
     "state": "NH"
   },
   {
     "id": 12,
-    "firstName": "Susie",
-    "lastName": "Thomson",
+    "firstName": "susie",
+    "lastName": "thomson",
     "role": "Engineer",
     "email": "susietom@email.com",
     "state": "NH"

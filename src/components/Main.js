@@ -6,10 +6,10 @@ import './style.css';
 
 export default class AppContainer extends React.Component {
   state = {
-    rolefilter: '',
+    namefilter: '',
     users: Data,
     noUsers: false,
-    madeSearch: false,
+    searched: false,
   };
 
   //   set the filter in the state to what is entered in the input
@@ -22,34 +22,34 @@ export default class AppContainer extends React.Component {
   handleFormSubmit = (event) => {
     event.preventDefault();
     const filteredusers = Data.filter(
-      (employee) => employee.role === this.state.filter
+      (employee) => employee.firstName === this.state.namefilter
     );
-   
+
     if (filteredusers.length !== 0) {
       this.setState({
         users: filteredusers,
         noUsers: false,
-        madeSearch: true,
+        searched: true,
       });
     } else {
       this.setState({ noUsers: true });
     }
     // clear the input
-    this.setState({ filter: '' });
+    this.setState({ namefilter: '' });
   };
 
   //   this resets the table by setting the state.users back to the original data from the Employee.json.  It also resets the order of the data, if the data has been sorted
   tabledatadisplay = async (event) => {
     event.preventDefault();
-    await this.setState({ users: Data, noUsers: false, madeSearch: false });
+    await this.setState({ users: Data, noUsers: false, searched: false });
     this.handleIdSort();
   };
 
-  handleFirstNameSort = (event) => {
+  handleRoleSort = (event) => {
     event.preventDefault();
 
     let sortedusers = this.state.users.sort((a, b) =>
-      a.firstName.localeCompare(b.firstName)
+      a.role.localeCompare(b.role)
     );
     this.setState({ users: sortedusers, noUsers: false });
   };
@@ -79,13 +79,12 @@ export default class AppContainer extends React.Component {
     this.setState({ users: sortedusers, noUsers: false });
   };
 
-
   renderTable = () => {
     if (this.state.noUsers === false) {
       return (
         <Table
           handleIdSort={this.handleIdSort}
-          handleFirstNameSort={this.handleFirstNameSort}
+          handleRoleSort={this.handleRoleSort}
           handleLastNameSort={this.handleLastNameSort}
           handleSortState={this.handleSortState}
           data={this.state.users}
@@ -102,7 +101,7 @@ export default class AppContainer extends React.Component {
         <SearchForm
           handleFormSubmit={this.handleFormSubmit}
           handleInputChange={this.handleInputChange}
-          filter={this.state.filter}
+          filter={this.state.namefilter}
           data={this.state.users}
           tabledatadisplay={this.tabledatadisplay}
         />
