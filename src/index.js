@@ -7,8 +7,9 @@ import { BrowserRouter } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.css';
 ReactDOM.render(
   <BrowserRouter>
-    <App className='App' />, document.getElementById('root')
-  </BrowserRouter>
+    <App className='App' />
+  </BrowserRouter>,
+  document.getElementById('root')
 );
 
 // If you want your app to work offline and load faster, you can change
